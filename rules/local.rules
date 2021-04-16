@@ -1,0 +1,13 @@
+alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:"ICMP PACKET RECEIVED"; sid:1000001)
+
+alert tcp $EXTERNAL_NET any -> $HOME_NET 23 (msg:"NMAP SCAN TELNET PORT INBOUND"; sid:1000002; fragoffset:0; ttl:<64; tos:0; dsize:0; flags:S; flow:from_client; window:1024; ack:0)
+
+alert tcp $HOME_NET 23 -> $EXTERNAL_NET any (msg:"NMAP SCAN TELNET CLOSED PORT RESPONSE"; sid:1000003; fragoffset:0; ttl:128; tos:0; fragbits:D; dsize:0; flags:RA; flow:not_established; window:0)
+
+alert tcp $EXTERNAL_NET any -> $HOME_NET 21 (msg:"NMAP SCAN FTP PORT INBOUND"; sid:1000004; fragoffset:0; ttl:<64; tos:0; dsize:0; flags:S; flow:from_client; window:1024; ack:0)
+
+alert tcp $HOME_NET 21 -> $EXTERNAL_NET any (msg:"NMAP SCAN FTP CLOSED PORT RESPONSE"; sid:1000005; fragoffset:0; ttl:128; tos:0; fragbits:D; dsize:0; flags:RA; flow:not_established; window:0)
+
+alert tcp $HOME_NET 21 -> $EXTERNAL_NET any (msg:"NMAP SCAN FTP OPEN PORT - FILEZILLA RESPONSE"; sid:1000006; fragoffset:0; ttl:128; tos:0; fragbits:D; dsize:0; flags:SA; flow:from_server; window:64240)
+
+alert tcp $HOME_NET 21 -> $EXTERNAL_NET any (msg:"NMAP SERVICE VERSION SCAN FTP OPEN PORT - FILEZILLA RESPONSE"; sid:1000007; content:"FileZilla Server"; content:"written by Tim Kosse"; content:"Please visit https://filezilla-project.org/"; fragoffset:0; ttl:128; tos:0; fragbits:D; flags:PA; flow:from_server)
