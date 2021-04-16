@@ -2,12 +2,12 @@
 Snort 2.9 para Windows
 
 Instalar Snort normalmente\
-Snort_2.9.17.1_Installer.x64.exe\
+Snort_2.9.17.1_Installer.x64.exe
 
 Instalar el plugin Npcap\
-npcap-1.30.exe\
+npcap-1.30.exe
 
-Versiones actualizadas de los instaladores:'
+Versiones actualizadas de los instaladores:
 https://www.snort.org/downloads \
 https://nmap.org/npcap/#download \
 
