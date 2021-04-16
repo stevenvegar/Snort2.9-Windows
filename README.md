@@ -11,7 +11,7 @@ Versiones actualizadas de los instaladores:\
 https://www.snort.org/downloads \
 https://nmap.org/npcap/#download 
 
-Luego de instalar, reemplazar todas las carpetas y archivos \
+Luego de instalar, reemplazar todas las carpetas y archivos\
 en C:\Snort\ 
 
 Cambiar la dirección IP del host en el archivo C:\Snort\Snort.conf \
