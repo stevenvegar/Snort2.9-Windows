@@ -23,4 +23,9 @@ luego de la variable $HOME_NET
 - Abrir una ventana de CMD como Administrador\
 - Navegar hasta la carpeta C:\Snort\bin\
 
-- Comprobar el estado de la instalacion:\
+1. Conocer la interfaz que está conectada a la red\
+y que va a ser monitoreada\
+snort.exe -W
+
+2. Comprobar el estado de la instalacion:\
+snort.exe -c C:\Snort\etc\snort.conf -T -i <index de la interfaz>
