@@ -9,10 +9,10 @@ npcap-1.30.exe
 
 Versiones actualizadas de los instaladores:\
 https://www.snort.org/downloads \
-https://nmap.org/npcap/#download \
+https://nmap.org/npcap/#download 
 
 Luego de instalar, reemplazar todas las carpetas y archivos \
-en C:\Snort\ \
+en C:\Snort\ 
 
 Cambiar la dirección IP del host en el archivo C:\Snort\Snort.conf \
 luego de la variable $HOME_NET
