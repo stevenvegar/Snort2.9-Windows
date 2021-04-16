@@ -16,3 +16,11 @@ en C:\Snort\
 
 Cambiar la dirección IP del host en el archivo C:\Snort\Snort.conf \
 luego de la variable $HOME_NET
+
+
+# Ejecutar Snort en Windows
+
+- Abrir una ventana de CMD como Administrador\
+- Navegar hasta la carpeta C:\Snort\bin\
+
+- Comprobar el estado de la instalacion:\
