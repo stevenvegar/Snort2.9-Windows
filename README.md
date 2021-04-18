@@ -31,8 +31,8 @@ y que va a ser monitoreada\
 snort.exe -W
 
 2. Comprobar el estado de la instalacion:\
-snort.exe -c C:\Snort\etc\snort.conf -T -i <index de la interfaz>
-mensaje correcto:
+snort.exe -c C:\Snort\etc\snort.conf -T -i <index de la interfaz>\
+mensaje correcto:\
   Snort successfully validated the configuration!
 
 3. Monitorear interfaz en la consola\
