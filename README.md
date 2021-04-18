@@ -21,7 +21,7 @@ El archivo de configuración solamente tiene activadas las reglas\
 local.rules
 
 
-# Ejecutar Snort en Windows
+## Ejecutar Snort en Windows
 
 - Abrir una ventana de CMD como Administrador
 - Navegar hasta la carpeta C:\Snort\bin\
@@ -31,9 +31,9 @@ y que va a ser monitoreada\
 snort.exe -W
 
 2. Comprobar el estado de la instalacion:\
-snort.exe -c C:\Snort\etc\snort.conf -T -i <index de la interfaz>\
+snort.exe -c C:\Snort\etc\snort.conf -T -i < index de la interfaz >\
 mensaje correcto:\
-  Snort successfully validated the configuration!
+    Snort successfully validated the configuration!
 
 3. Monitorear interfaz en la consola\
 snort.exe -c C:\Snort\etc\snort.conf -A console -i <index de la interfaz>
