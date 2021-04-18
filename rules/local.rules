@@ -11,3 +11,5 @@ alert tcp $HOME_NET 21 -> $EXTERNAL_NET any (msg:"NMAP SCAN FTP CLOSED PORT RESP
 alert tcp $HOME_NET 21 -> $EXTERNAL_NET any (msg:"NMAP SCAN FTP OPEN PORT - FILEZILLA RESPONSE"; sid:1000006; fragoffset:0; ttl:128; tos:0; fragbits:D; dsize:0; flags:SA; flow:from_server; window:64240)
 
 alert tcp $HOME_NET 21 -> $EXTERNAL_NET any (msg:"NMAP SERVICE VERSION SCAN FTP OPEN PORT - FILEZILLA RESPONSE"; sid:1000007; content:"FileZilla Server"; content:"written by Tim Kosse"; content:"Please visit https://filezilla-project.org/"; fragoffset:0; ttl:128; tos:0; fragbits:D; flags:PA; flow:from_server)
+
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"WANNACRY ALERT: CnC DNS REQUEST DETECTED"; sid:1000008; content:"iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea"; reference:url,https://blog.talosintelligence.com/2017/05/wannacry.html)
