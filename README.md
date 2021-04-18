@@ -23,7 +23,7 @@ local.rules
 
 # Ejecutar Snort en Windows
 
-- Abrir una ventana de CMD como Administrador\
+- Abrir una ventana de CMD como Administrador
 - Navegar hasta la carpeta C:\Snort\bin\
 
 1. Conocer la interfaz que está conectada a la red\
